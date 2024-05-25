@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int monedas[] = { 2 , 5 , 10 , 20 , 50 , 100 , 200 };
-int respuesta[7];
+int monedas[] = {1 , 2 , 5 , 10 , 20 , 50 , 100 , 200 };
+int respuesta[8];
 
 void cambio(int vuelto, int* mon, int* resp, int n) {
 
@@ -26,13 +26,13 @@ void cambio(int vuelto, int* mon, int* resp, int n) {
 
 void verResp() {
 	cout << "Se dieron:\n";
-	for (int i = 0; i < 7; i++) {
+	for (int i = 0; i < 8; i++) {
 		cout << respuesta[i] << " moneda(s) de " << monedas[i] << " centavos.\n";
 	}
 }
 
 int main() {
 	
-	cambio(189, monedas, respuesta, 7);
+	cambio(189, monedas, respuesta, 8);
 	verResp();
 }
